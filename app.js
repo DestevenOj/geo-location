@@ -5,7 +5,17 @@ let temperatureSection = document.querySelector('.temperature-section');
 let locationHumidity = document.getElementById('humidity');
 let locationWindSpeed = document.getElementById('wind-speed');
 let locationPressure = document.getElementById('pressure');
-const temperatureSpan = document.querySelector('.temperature-section span');
+const temperatureSpan = docapiument.querySelector('.temperature-section span');
+ 
+// set current date
+let completeDate = new Date();
+let date = date.getDate; 
+let year = date.getFullYear;
+let month = date.getMonth;
+let day = date.getDay(()=> {
+    console.log("I am Happy");
+});
+
 
 let cityName = document.getElementById('city-name');
 let city = cityName.value;
