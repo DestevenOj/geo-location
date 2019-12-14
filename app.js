@@ -6,6 +6,89 @@ let locationHumidity = document.getElementById('humidity');
 let locationWindSpeed = document.getElementById('wind-speed');
 let locationPressure = document.getElementById('pressure');
 const temperatureSpan = document.querySelector('.temperature-section span');
+ 
+// create current date
+let completeDate = new Date();
+let date = completeDate.getDate(); 
+let year = completeDate.getFullYear();
+let month = completeDate.getMonth();
+let day = completeDate.getDay();
+    
+let newDay = "";
+    switch(day) {
+        case 1:
+            newDay = "Monday";
+          break;
+        case 2:
+            newDay = "Tuesday";
+          break;
+        case 3:
+            newDay = "Wednesday";
+          break;
+        case 4:
+            newDay = "Thursday";
+          break;
+        case 5:
+            newDay = "Friday";
+          break;
+        case 6:
+            newDay = "Saturday"
+          break;
+        case 7:
+            newDay = "Sunday";
+          break;
+        default:
+            newDay = "No Day";
+      };
+
+// set month in words
+    let newMonth = "";
+    switch(month) {
+        case 1:
+            newMonth = "January";
+            break;
+        case 2:
+            newMonth = "February";
+            break;
+        case 3:
+             newMonth = "March";
+            break;
+        case 4:
+            newMonth = "April";
+          break;
+        case 5:
+            newMonth = "MAy";
+            break;
+        case 6:
+            newMonth = "June"
+            break;
+        case 7:
+            newMonth = "July";
+            break;
+        case 8:
+            newMonth = "August";
+            break;
+        case 9:
+            newMonth = "September";
+            break;
+        case 10:
+            newMonth = "October";
+            break;
+        case 11:
+            newMonth = "November";
+            break;
+        case 12:
+            newMonth = "December";
+            break;
+        default:
+            newMonth = "No Month";
+      };
+
+
+// set the dates
+document.getElementById("today").textContent = newDay;
+document.getElementById("today-date").textContent = date +"th "+ newMonth +" "+ year;
+console.log(year);
 
 let cityName = document.getElementById('city-name');
 let city = cityName.value;
